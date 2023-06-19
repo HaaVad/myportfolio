@@ -14,10 +14,10 @@ export default async function Home() {
         alt="Håkon"
         className="h-96 pb-6 object-cover object-center"
       />
-      <h1 className="text-4xl font-extrabold">
+      <h1 className="text-4xl font-extrabold p-1 sm:text-3xl">
         Hi! I am Håkon!
       </h1>
-      <p className="mt-3 text-xl mb-4 pb-4">Thanks for visiting my website! These are some of the projects Ive been working on. Feel free to contact me for feedback or questions. And hit me up for a digital tea if you want to connect! </p>
+      <p className="mt-3 text-xl mb-4 p-1 pb-4 sm:text-3xl">Thanks for visiting my website! These are some of the projects Ive been working on. Feel free to contact me for feedback or questions. And hit me up for a digital tea if you want to connect! </p>
 
      
       <h2 className="mt24 font-bold text-gray-700 text-3xl">Projects</h2>
