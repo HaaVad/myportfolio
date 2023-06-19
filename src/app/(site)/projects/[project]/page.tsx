@@ -13,8 +13,7 @@ export default async function Project({params}: Props) {
     return (
     <div>
         <header className="flex items-center justify-between">
-            <h1 className="bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text 
-            text-transparent text-5xl drop-shadow font-extrabold">
+            <h1 className="bg-gradient-to-r text-5xl drop-shadow font-extrabold">
                 {project.name}
             </h1> 
 
@@ -24,7 +23,7 @@ export default async function Project({params}: Props) {
             target="blank" 
             rel="noopener noreferrer"
             className="bg-gray-100 rounded-lg text-gray-500 font-bold py-3 px-4 whitespace-nowrap
-            hover:bg-pink-500 hover:text-pink-100 transition">
+            hover:bg-green-600 hover:text-green-100 transition">
                 View Project
             </a>
             

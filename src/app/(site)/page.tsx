@@ -5,6 +5,9 @@ import Hero from "./assets/Satemwa_MJBrenna_Vadstein.jpg"
 
 export default async function Home() {
   const projects = await getProjects();
+  const sortedProjects = projects.sort((a, b) => {
+    return new Date(b.date).getTime() - new Date(a.date).getTime();
+  });
 
   return (
     <div className="max-w-3xl mx-auto py-2">
@@ -22,19 +25,20 @@ export default async function Home() {
      
       <h2 className="mt24 font-bold text-gray-700 text-3xl">Projects</h2>
       <div className="mt-5 grid grid-cols-1 med: grid-cols-2 lg:grid-cols-3 gap-8">
-      {projects
+      {sortedProjects
+
       .map((project) => ( 
         <Link 
         href={`/projects/${project.slug}`} 
         key={project._id} 
-        className="border-2 border-gray-500 rounded-lg p-1">
+        className="border-2 border-brown rounded-lg p-1">
           {project.image && (
             <Image 
             src={project.image}
             alt={project.name}
             width={750}
             height={300}
-            className="object-cover rounded-lg border border-gray-500"
+            className="object-cover rounded-lg border border-grey-500"
             />
           )}
           <div className="mt-2 font-extrabold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">{project.name}</div></Link>
