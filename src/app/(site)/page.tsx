@@ -22,7 +22,8 @@ export default async function Home() {
      
       <h2 className="mt24 font-bold text-gray-700 text-3xl">Projects</h2>
       <div className="mt-5 grid grid-cols-1 med: grid-cols-2 lg:grid-cols-3 gap-8">
-      {projects.map((project) => ( 
+      {projects
+      .map((project) => ( 
         <Link 
         href={`/projects/${project.slug}`} 
         key={project._id} 
