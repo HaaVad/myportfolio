@@ -19,7 +19,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className="max-w-3xl mx-auto py-14 font-mono">
+      <body className="max-w-3xl mx-auto py-14 font-mono bg-bg-color">
         <header className="flex items-center justify-between pl-1 pr-1">
           <Link
           href="/"
@@ -38,7 +38,6 @@ export default async function RootLayout({
         </header>
         
       <main className="py-1">{children}</main>
-        
       </body>
     </html>
   )
