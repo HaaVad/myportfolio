@@ -10,21 +10,21 @@ export default async function Home() {
   });
 
   return (
-    <div className="max-w-3xl mx-auto py-2">
-   
+    <div className="max-w-3xl mx-auto py-2 text-brown">
       <Image
         src={Hero}
         alt="Håkon"
-        className="h-96 pb-6 object-cover object-center"
+        priority={true}
+        className="h-52 pb-6 object-cover object-center drop-shadow md:h-96"
       />
-      <h1 className="text-4xl font-extrabold p-1 sm:text-3xl">
+      <h1 className="text-black text-2xl font-extrabold px-1 md:px-0 md:text-4xl">
         Hi! I am Håkon!
       </h1>
-      <p className="mt-3 text-xl mb-4 p-1 pb-4 sm:text-3xl">Thanks for visiting my website! These are some of the projects Ive been working on. Feel free to contact me for feedback or questions. And hit me up for a digital tea if you want to connect! </p>
+      <p className="mt-3 text-base mb-4 p-1 pb-4 md:px-1 md:text-xl">Thanks for visiting my website! These are some of the projects I have been working on. Feel free to contact me for feedback or questions. And hit me up for a digital tea if you want to connect! </p>
 
      
-      <h2 className="mt24 font-bold text-gray-700 text-3xl">Projects</h2>
-      <div className="mt-5 grid grid-cols-1 med: grid-cols-2 lg:grid-cols-3 gap-8">
+      <h2 className="mt24 font-bold text-2xl md:text-3xl px-1">Projects</h2>
+      <div className="mt-5 grid grid-cols-1 med: px-3 grid-cols-2 lg:grid-cols-3 gap-8">
       {sortedProjects
 
       .map((project) => ( 
@@ -47,4 +47,5 @@ export default async function Home() {
     </div>
   )
 }
+
 

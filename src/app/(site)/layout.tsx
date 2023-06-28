@@ -19,8 +19,8 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
-      <body className="max-w-3xl mx-auto py-14 font-mono bg-bg-color">
-        <header className="flex items-center justify-between pl-1 pr-1">
+      <body className="max-w-3xl flex flex-col mx-auto min-h-screen font-mono bg-bg-color">
+        <header className="flex items-center justify-between pt-7 px-2 md:px-0 lg:pt-14">
           <Link
           href="/"
           className="font-bold"
@@ -37,7 +37,33 @@ export default async function RootLayout({
           </div>
         </header>
         
-      <main className="py-1">{children}</main>
+      <main className="py-1 flex-grow pb-10">{children}</main>
+      <footer className="py-12 flex flex-col">
+      <div className="container mx-auto flex items-center justify-between max-w-5xl px-2 md:px-0">
+        <div className="flex space-x-4">
+            <a href="https://www.linkedin.com/in/h%C3%A5kon-vadstein-186066186/" target="_blank" rel="noopener noreferrer">
+              <img
+                src="https://cdn1.iconfinder.com/data/icons/social-media-circle-7/512/Circled_Linkedin_svg-256.png"
+                alt="LinkedIn"
+                className="w-6 h-6"
+              />
+            </a>
+            <a href="https://github.com/HaaVad" target="_blank" rel="noopener noreferrer">
+              <img
+                src="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-social-github-256.png" 
+                alt="GitHub"
+                className="w-6 h-6"
+              />
+            </a>
+        </div>
+        <div>
+          <p className="text-gray-800 text-sm">
+            &copy; {new Date().getFullYear()} Håkon Vadstein.
+          </p>
+        </div>
+      </div>
+    </footer>
+
       </body>
     </html>
   )
