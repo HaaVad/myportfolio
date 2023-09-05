@@ -11,11 +11,11 @@ export default async function Page ({params}: Props) {
     return (
 
         <div>
-            <h1 className="text-3xl drop-shadow font-extrabold px-2 md:text-5xl">
+            <h1 className="text-2xl drop-shadow font-extrabold py-3 px-4 md:px-2 md:text-5xl">
                 {page.title}
             </h1> 
 
-            <div className="text-sm text-gray-700 mt-10 px-2 md:text-lg">
+            <div className="text-sm text-gray-700 px-4 md:px-2 md:text-lg">
                 <PortableText value={page.content} />
             </div>
         </div>

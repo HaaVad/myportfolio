@@ -17,21 +17,21 @@ export default async function Home() {
         priority={true}
         className="h-52 pb-6 object-cover object-center drop-shadow md:h-96"
       />
-      <h1 className="text-black text-2xl font-extrabold px-1 md:px-0 md:text-4xl">
+      <h1 className="text-black text-2xl font-extrabold px-4 md:px-0 md:text-4xl">
         Hi! I am Håkon!
       </h1>
-      <p className="mt-3 text-base mb-4 p-1 pb-4 md:px-1 md:text-xl">Thanks for visiting my website! These are some of the projects I have been working on. Feel free to contact me for feedback or questions. And hit me up for a digital tea if you want to connect! </p>
+      <p className="mt-3 text-base mb-4 px-4 md:px-0 md:text-xl">Thanks for visiting my website! These are some of the projects I have been working on. Feel free to contact me for feedback or questions. And hit me up for a digital tea if you want to connect! </p>
 
      
-      <h2 className="mt24 font-bold text-2xl md:text-3xl px-1">Projects</h2>
-      <div className="mt-5 grid grid-cols-1 med: px-3 grid-cols-2 lg:grid-cols-3 gap-8">
+      <h1 className="mt24 font-bold text-2xl px-4 md:px-0 md:text-3xl">Projects</h1>
+      <div className="mt-5 grid grid-cols-1 px-4 md:px-0 md:grid-cols-2 lg:grid-cols-3 gap-8">
       {sortedProjects
 
       .map((project) => ( 
         <Link 
         href={`/projects/${project.slug}`} 
         key={project._id} 
-        className="border-2 border-brown rounded-lg p-1">
+        className="border-0 md:border-2 border-brown rounded-lg p-1">
           {project.image && (
             <Image 
             src={project.image}

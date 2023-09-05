@@ -20,7 +20,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className="max-w-3xl flex flex-col mx-auto min-h-screen font-mono bg-bg-color">
-        <header className="flex items-center justify-between pt-7 px-2 md:px-0 lg:pt-14">
+        <header className="flex items-center justify-between pt-7 px-4 md:px-0 lg:pt-14">
           <Link
           href="/"
           className="font-bold"
@@ -39,7 +39,7 @@ export default async function RootLayout({
         
       <main className="py-1 flex-grow pb-10">{children}</main>
       <footer className="py-12 flex flex-col">
-      <div className="container mx-auto flex items-center justify-between max-w-5xl px-2 md:px-0">
+      <div className="container mx-auto flex items-center justify-between max-w-5xl px-4 md:px-0">
         <div className="flex space-x-4">
             <a href="https://www.linkedin.com/in/h%C3%A5kon-vadstein-186066186/" target="_blank" rel="noopener noreferrer">
               <img
