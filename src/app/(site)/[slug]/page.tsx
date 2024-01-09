@@ -11,7 +11,7 @@ export default async function Page ({params}: Props) {
     return (
 
         <div>
-            <h1 className="text-2xl drop-shadow font-extrabold py-3 px-4 md:px-2 md:text-5xl">
+            <h1 className="text-2xl drop-shadow font-extrabold py-4 px-4 md:px-2 md:text-5xl">
                 {page.title}
             </h1> 
 

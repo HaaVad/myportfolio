@@ -20,7 +20,11 @@ export default async function Home() {
       <h1 className="text-black text-2xl font-extrabold px-4 md:px-0 md:text-4xl">
         Hi! I am Håkon!
       </h1>
-      <p className="mt-3 text-base mb-4 px-4 md:px-0 md:text-xl">Thanks for visiting my website! These are some of the projects I have been working on. Feel free to contact me for feedback or questions. And hit me up for a digital tea if you want to connect! </p>
+      <p className="mt-3 text-base mb-4 px-4 md:px-0 md:text-xl">
+      Thanks for visiting my website! These are some of the projects I have been working on.
+      Feel free to <Link href="/contact" className="text-green-600 font-semibold hover:text-green-400">contact</Link> me for feedback or questions.
+      And hit me up for a digital tea if you want to connect!
+    </p>
 
      
       <h1 className="mt24 font-bold text-2xl px-4 md:px-0 md:text-3xl">Projects</h1>

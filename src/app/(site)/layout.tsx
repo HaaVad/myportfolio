@@ -28,6 +28,11 @@ export default async function RootLayout({
           Håkon.
           </Link>
           <div className="flex items-center gap-5 text-sm text-gray-600">
+          <Link
+              href="/contact" className="hover:text-gray-300">
+                Contact
+              </Link>
+
             {pages.map((page)=> (
               <Link key={page._id}
               href={`/${page.slug}`} className="hover:text-gray-300">
