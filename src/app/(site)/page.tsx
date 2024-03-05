@@ -10,25 +10,25 @@ export default async function Home() {
   });
 
   return (
-    <div className="max-w-3xl mx-auto py-2 text-brown">
+    <div className="max-w-3xl mx-auto text-brown">
       <Image
         src={Hero}
         alt="Håkon"
         priority={true}
-        className="h-52 pb-6 object-cover object-center drop-shadow md:h-96"
+        className="h-72 pb-4 object-cover object-center drop-shadow md:h-96"
       />
-      <h1 className="text-black text-2xl font-extrabold px-4 md:px-0 md:text-4xl">
-        Hi! I am Håkon!
+      <h1 className="text-black text-3xl font-extrabold my-3 px-5 md:px-0 md:text-4xl">
+      Hi! I am Håkon!
       </h1>
-      <p className="mt-3 text-base mb-4 px-4 md:px-0 md:text-xl">
+      <p className="mt text-lg px-5 md:px-0 md:text-xl">
       Thanks for visiting my website! These are some of the projects I have been working on.
       Feel free to <Link href="/contact" className="text-green-600 font-semibold hover:text-green-400">contact</Link> me for feedback or questions.
-      And hit me up for a digital tea if you want to connect!
-    </p>
+      </p >
+      <p className="my-8 md:my-0 text-lg mb-4 px-5 md:px-0 md:text-xl">And hit me up for a digital tea if you want to connect!</p>
 
      
-      <h1 className="mt24 font-bold text-2xl px-4 md:px-0 md:text-3xl">Projects</h1>
-      <div className="mt-5 grid grid-cols-1 px-4 md:px-0 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <h1 id="projects" className="mt-10 font-bold text-3xl px-4 md:px-0 md:text-3xl">Projects</h1>
+      <div className="mt-5 grid grid-cols-1 px-4 md:px-0 md:grid-cols-2 lg:grid-cols-2 gap-8">
       {sortedProjects
 
       .map((project) => ( 

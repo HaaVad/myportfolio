@@ -20,7 +20,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className="max-w-3xl flex flex-col mx-auto min-h-screen font-mono bg-bg-color">
-        <header className="flex items-center justify-between pt-7 px-4 md:px-0 lg:pt-14">
+        <header className="flex items-center justify-between pb-1 pt-7 px-4 md:px-0 lg:pt-14">
           <Link
           href="/"
           className="font-bold"
