@@ -16,7 +16,7 @@ const config = defineConfig({
 
     plugins: [deskTool()],
 
-    schema: {types: schemas}
+    schema: {types: schemas},
 
 })
 

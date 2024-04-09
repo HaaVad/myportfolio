@@ -20,7 +20,7 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className="max-w-3xl flex flex-col mx-auto min-h-screen font-mono bg-bg-color">
-        <header className="flex items-center justify-between pb-1 pt-7 px-4 md:px-0 lg:pt-14">
+        <header className="relative flex items-center justify-between pb-1 lg:pb-2 pt-5 px-4 lg:px-0 lg:-mx-4 lg:pt-6">
           <Link
           href="/"
           className="font-bold"
@@ -40,9 +40,10 @@ export default async function RootLayout({
               </Link>
             ))}
           </div>
+          <div className={`absolute left-0 right-0 bottom-0 md:h-px mb-1 opacity-50 md:bg-black md:-mx-4 lg:-mx-10`}></div>
         </header>
         
-      <main className="py-1 flex-grow pb-10">{children}</main>
+      <main className="py-2 flex-grow pb-10">{children}</main>
       <footer className="py-12 flex flex-col">
       <div className="container mx-auto flex items-center justify-between max-w-5xl px-4 md:px-0">
         <div className="flex space-x-4">

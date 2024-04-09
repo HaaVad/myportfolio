@@ -26,6 +26,7 @@ export default function ContactForm() {
         <textarea
           id="message"
           name="message"
+          rows={4}
           placeholder="Your message here"
           className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-500"
         />

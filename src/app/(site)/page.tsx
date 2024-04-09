@@ -1,13 +1,19 @@
+
 import {getProjects} from "../../../sanity/sanity-utils"
 import Image from "next/image";
 import Link from "next/link";
 import Hero from "./assets/Satemwa_MJBrenna_Vadstein.jpg"
 
+export const revalidate = 10;
+
 export default async function Home() {
   const projects = await getProjects();
   const sortedProjects = projects.sort((a, b) => {
-    return new Date(b.date).getTime() - new Date(a.date).getTime();
+    return new Date(b.date).getTime() - new Date(a.date).getTime();  
   });
+
+
+
 
   return (
     <div className="max-w-3xl mx-auto text-brown">

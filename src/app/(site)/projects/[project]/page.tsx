@@ -11,6 +11,8 @@ export default async function Project({params}: Props) {
     const slug = params.project;
     const project = await getProject(slug);
 
+
+
     return (
     <div className="px-4 md:px-0">
         <header className="flex items-center justify-between">
@@ -47,6 +49,7 @@ export default async function Project({params}: Props) {
         alt={project.name}
         width={1920}
         height={1080}
+        id="gif"
         className="mt-10 border-2 border-gray-500 object-cover rounded-xl"
 
         />
