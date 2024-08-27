@@ -27,35 +27,12 @@ export default async function Home() {
       Hi! I am Håkon!
       </h1>
       <p className="mt text-lg px-5 md:px-0 md:text-xl">
-      Thanks for visiting my website! These are some of the projects I have been working on.
-      Feel free to <Link href="/contact" className="text-green-600 font-semibold hover:text-green-400">contact</Link> me for feedback or questions.
+      Currently working as a developer at <a href="https://www.noaignite.no/"  className="text-green-600 font-semibold hover:text-green-400"> NoA Ignite</a>. This site is undergoing a transformation, but feel free to 
+      <Link href="/contact" className="text-green-600 font-semibold hover:text-green-400"> contact</Link> me for digital tea.
+      Also, check out 
+      <a href="https://spillthetea.no/"  className="text-green-600 font-semibold hover:text-green-400"> my teashop!</a>
       </p >
-      <p className="my-8 md:my-0 text-lg mb-4 px-5 md:px-0 md:text-xl">And hit me up for a digital tea if you want to connect!</p>
-
      
-      <h1 id="projects" className="mt-10 font-bold text-3xl px-4 md:px-0 md:text-3xl">Projects</h1>
-      <div className="mt-5 grid grid-cols-1 px-4 md:px-0 md:grid-cols-2 lg:grid-cols-2 gap-8">
-      {sortedProjects
+</div>
 
-      .map((project) => ( 
-        <Link 
-        href={`/projects/${project.slug}`} 
-        key={project._id} 
-        className="border-0 md:border-2 border-brown rounded-lg p-1">
-          {project.image && (
-            <Image 
-            src={project.image}
-            alt={project.name}
-            width={750}
-            height={300}
-            className="object-cover rounded-lg border border-grey-500"
-            />
-          )}
-          <div className="mt-2 font-extrabold bg-gradient-to-r from-orange-400 via-red-500 to-purple-600 bg-clip-text text-transparent">{project.name}</div></Link>
-      ))}
-    </div>
-    </div>
-  )
-}
-
-
+  )}

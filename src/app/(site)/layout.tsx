@@ -32,13 +32,10 @@ export default async function RootLayout({
               href="/contact" className="hover:text-gray-300">
                 Contact
               </Link>
-
-            {pages.map((page)=> (
-              <Link key={page._id}
-              href={`/${page.slug}`} className="hover:text-gray-300">
-                {page.title}
-              </Link>
-            ))}
+              <a
+              href="https://spillthetea.no/" className="hover:text-gray-300">
+                Spill the Tea
+              </a>
           </div>
           <div className={`absolute left-0 right-0 bottom-0 md:h-px mb-1 opacity-50 md:bg-black md:-mx-4 lg:-mx-10`}></div>
         </header>
